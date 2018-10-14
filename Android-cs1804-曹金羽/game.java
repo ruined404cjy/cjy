@@ -43,25 +43,29 @@ public class game {
 		//第一回合
 		System.out.println("第1回合"+"\n"+"当前回合："+banker.getName());
 		banker.h=banker.deal(banker.getH(),deck[1]);
+		System.out.println("按回车结束当前回合");
+		new Scanner(System.in).nextLine();
+		System.out.println("5秒后进入下一回合");
 		try {
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("6秒后进入下一回合");
 		for(int i=0;i<400;i++){
 			 System.out.println("");
 		 }
 		System.out.println("第2回合"+"\n"+"当前回合："+gamer.getName());
 		gamer.h=gamer.deal(gamer.getH(), deck[2]);
+		System.out.println("按回车结束当前回合");
+		new Scanner(System.in).nextLine();
+		System.out.println("5秒后进入下一回合");
 		try {
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("6秒后进入下一回合");
 		for(int i=0;i<400;i++){
 			 System.out.println("");
 		 }
@@ -226,13 +230,15 @@ class gambler{
 		System.out.println("你曾选择放弃抽牌"+"\n"+"你当前总点数为"+getH());		
 		System.out.println("#####################################################"+"\n");
 	}
-	 try {
-			Thread.sleep(6000);
+	 System.out.println("按回车结束当前回合");
+	 new Scanner(System.in).nextLine();
+		System.out.println("5秒后进入下一回合");
+		try {
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	 System.out.println("6秒后进入下一回合");
 	 for(int i=0;i<400;i++){
 		 System.out.println("");
 	 }
@@ -259,13 +265,15 @@ class gambler{
 		 System.out.println("你曾选择放弃抽牌"+"\n"+"你当前总点数为"+getH());
 		 System.out.println("#####################################################"+"\n");
 	 }
-	 try {
-			Thread.sleep(6000);
+	 System.out.println("按回车结束当前回合");
+	 new Scanner(System.in).nextLine();
+		System.out.println("5秒后进入下一回合");
+		try {
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	 System.out.println("6秒后进入下一回合");
 	 for(int i=0;i<400;i++){
 		 System.out.println("");
 	 }
